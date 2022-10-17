@@ -1,0 +1,17 @@
+name: PR Labels
+
+on:
+  pull_request_target:
+
+jobs:
+  labels:
+    name: Labels
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Add required labels
+        uses: doka-guide/doka-labeler@v1
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          strategy: append
+          config: ".github/labeler.yml"
