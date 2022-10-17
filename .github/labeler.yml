@@ -1,9 +1,6 @@
 css:
-  - files:
-    - web/css/*.md
+  - files: web/css/*.md
 html:
-  - files:
-    - web/html/*.md
+  - files: web/html/*.md
 js:
-  - files:
-    - web/js/*.md
+  - files: web/js/*.md
